@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/pokemon-fire-red" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>Choose Your Starter..</h1>
+    </header>
+    <div class="dash-container">
+        <div class="score-board">
+            <div id="user-score" class="scores">
+                <h2>Player 1</h2>
+                <p id="user" class="">0</p>
+                
+            </div>
+            <div id="enemy-score" class="scores">
+                <h2>Gary</h2>
+                <p id="enemy">0</p>
+            </div>
+        </div>
+    </div>
+    <div class="outcome-container">
+        <h2 id="outcome">Choose a pokemon to begin</h2>
+    </div>
+    <div class = "image-container">
+        <div class="images">
+            <img class="ash" src="/images/ash.png">
+        </div>
+        
+    </div>
+    <div class="button-container">
+        <button id="grass" class="buttons"><img class="pokemon" src="/images/bulbasaur.png"></button>
+        <button id="water" class="buttons"><img class="pokemon" src="/images/squirtel.png"></button>
+        <button id="fire" class="buttons"><img class="pokemon"  src="/images/charmander.png"></button>
+    </div>
+    <footer>Giuseppe Made this</footer>
     <script src="javascript.js"></script>
 </body>
 </html>
