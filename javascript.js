@@ -24,22 +24,6 @@ buttons.forEach((button) => {
     });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function computerPlay(){
     choice = Math.floor(Math.random() * 3);
     if(choice===0){
