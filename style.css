@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-image: url("images/background.png");
+    background-image: url(".../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -21,8 +21,6 @@ body{
     opacity: 0.9;
     border-radius: 50px;
     min-width: 700px;
-
-    
 }
 h1{
     font-size: 5em;
