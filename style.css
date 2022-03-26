@@ -1,159 +1,103 @@
-@import url('http://fonts.cdnfonts.com/css/pokemon-fire-red');
 
-body{
+*{
     margin: 0;
-    padding:0;
-    background-color: rgb(99, 97, 107);
-    font-family: 'Pokemon Fire Red', sans-serif;
-    color: white;
-   
+    padding: 0;
 }
-.content-flex{
+body{
+    background-image: url("images/background.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-family: sans-serif ;
+}
+.fade-background{
+    background-color: whitesmoke;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    opacity: 0.9;
+    border-radius: 50px;
+    min-width: 700px;
+
+    
+}
+h1{
+    font-size: 5em;
+    font-family: sans-serif ;
+    color: rgb(111, 192, 238);
+}
+
+.main-container{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
-header h1{
-    margin: 0px;
-    text-shadow: 5px 5px 10px red;
     
 }
-header{
-    text-align: center;
-    font-size: 3em;
-    height: auto;
-    padding: 0px;
-    width: 100%;
-    margin:0px;
-}
-.dash-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
-    gap:10px;
-    
-    
-}
-.score-board{
+.score-dashboard{
     display: flex;
+    width: 50vw;
     justify-content: center;
+    height: 40vh;
+    min-width: 600px;
+    
+    z-index: 1;
+}
+.user-scoreboard, .computer-scoreboard{
+    
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height:auto;
-    width: 100%;
-    gap:15px;
-    height: 150px;
-}
-h2,p{
-    padding: 0px;
-    margin: 0px;
-}
-.scores{
-    text-align: center;
-    width: 318px;
-    min-width: 150px;
-    
-    
-    
-}
+    width:50%;
+    min-width: 300px;
+    justify-content: space-around;
 
-#user-score{
-    font-size: 40px;
-    margin: 0px;
-    padding: 0px;
-    border: solid white 4px ;
-    box-sizing: border-box;
-    box-shadow:5px 5px 4px 1px red ;
-    
-    
-}
-#enemy-score{
-    font-size: 40px;
-    border: solid white 4px;
-    box-shadow:5px 5px 4px 1px red ;
-    
-}
-.outcome-container{
-    margin: 10px;
-    display: flex;
-    align-items: center;
-}
-#outcome{
-    font-size: 40px;
-}
-
-.image-container{
-    display: flex;
-    justify-content:center;
-    width: 100%;
-    height:250px; 
-    background-image: url(/images/ashbackground.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-.images{
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .button-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
-    margin-top: 20px;
-    gap:20px;
+    width: 50vw;
+    min-width: 650px;
+    justify-content: space-between;
+    gap:5px
+    
 }
-.pokemon{
+.button{
+    width:200px;
     height: 200px;
-    width: 100%;
-}
-.buttons{
-    height: auto;
-    width: 250px;
     background-color: transparent;
     border: none;
     
+
+}
+#outcome{
+    font-size: 2em;
+}
+.image1, .image2{
     
-}
-#grass{
-    border: solid white 5px;
-    box-shadow:5px 5px 2px 2px lime ;
-}
-#water{
-    border: solid white 5px;
-    box-shadow:5px 5px 2px 2px rgb(61, 161, 228) ;
-}
-#fire{
-    border: solid white 5px;
-    box-shadow:5px 5px 2px 2px red;
+    width: 200px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-#grass:hover{
-    box-shadow:1px 1px 5px 10px lime ;
+.playerImage, .compImage{
+    width: 150px;
+    height: 150px;
 }
-#water:hover{
-    box-shadow:1px 1px 5px 10px rgb(61, 161, 228) ;
+.players{
+    font-size: 3em ;
 }
-#fire:hover{
-    box-shadow:1px 1px 5px 10px red ;
-}
-.ash{
-    height: 250px;
-}
-.rocket{
-    height: 300px;
+.scores{
+    font-size: 3em ;
 }
 
-
-   
-
-
+footer{
+    font-size: 1.5em;
+}
